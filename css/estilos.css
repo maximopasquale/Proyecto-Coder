@@ -188,7 +188,8 @@ background: linear-gradient(90deg, rgba(100,255,201,1) 0%, rgba(255,231,8,1) 51%
     border-color: yellow;
     border-radius: 10px;
     padding: 5px;
-    margin-left: 40%;
+    margin: auto;
+    
      }
     
 
@@ -291,14 +292,17 @@ background: linear-gradient(90deg, rgba(100,255,201,1) 0%, rgba(255,231,8,1) 51%
     justify-content: space-between;
     padding: 20px;
  }
-
+ .contacto2{
+  width: 400px;
+  margin: auto;
+}
   /* media querys */
   /* movil */
 @media screen and (max-width: 599px) {
  .nav_lista{
     display: none;
  }
- .nav:target{
+ .nav__lista:target {
     display: block;
  }
  .header__menu{
