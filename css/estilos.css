@@ -9,7 +9,11 @@ a{
 body{
     font-family: Roboto,sans-serif;
 }
-
+.main{
+    margin-top: 131px;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    }
 
 .header{
 background-color: black;
@@ -57,11 +61,7 @@ padding: 1rem;
  }
 
 
-.main{
-    margin-top: 131px;
-    background-color: whitesmoke;
-    min-height: 100vh;
-    }
+
 .main_titulo{
     text-align: center;
     font-size: 22px;
