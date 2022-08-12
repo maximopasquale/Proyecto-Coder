@@ -91,10 +91,10 @@ body {
   gap: 5px; }
 
 .grid__2 {
+  width: 617;
+  height: 500;
   border: 3px solid black;
   display: grid;
-  width: 617px;
-  height: 500px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "img6" "img7";

@@ -10,12 +10,11 @@
     
 }
 .main--titulo{
-    width: 100%;
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    
-}
+    width: map-get($estilostitulo,ancho);
+    background-color: map-get($estilostitulo,color);
+    display: map-get($estilostitulo,flex);
+    justify-content: map-get($estilostitulo,centro);
+    }
 
 .main__seccion2{
     padding: 2rem;
@@ -26,12 +25,16 @@
     justify-content: center;
     gap: 5px;
 }
+@mixin  size ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
 
-.grid__2{
+.grid__2{    
+    @include size (617,500 );
     border: 3px solid black;
     display: grid;
-    width: 617px;
-    height: 500px;
+
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
@@ -40,6 +43,7 @@
     padding: 2rem;
 
 }
+
 .hijo6{
     grid-area: img6;
 }
